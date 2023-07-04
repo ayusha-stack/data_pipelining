@@ -1,4 +1,4 @@
-INSERT INTO standard.employees (
+INSERT INTO standard.employee (
   employee_id,
   first_name,
   last_name,
@@ -35,4 +35,4 @@ SELECT
   dob::DATE,
   CAST(fte AS FLOAT),
   location
-FROM raw.employees;
+FROM raw.employee;

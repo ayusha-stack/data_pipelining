@@ -1,12 +1,12 @@
-DROP TABLE IF EXISTS raw.employee;
+TRUNCATE TABLE raw.employee;
 
-CREATE TABLE raw.employee (
+CREATE TABLE  IF NOT EXISTS raw.employee (
     employee_id varchar(255),
     first_name varchar(255),
     last_name varchar(255),
     department_id varchar(255),
     department_name varchar(255),
-    manager_id varchar(255),
+    manager_employee_id varchar(255),
     employee_role varchar(255),
     salary varchar(255),
     hire_date varchar(255),
