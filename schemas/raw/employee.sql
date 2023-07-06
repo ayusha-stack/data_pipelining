@@ -1,4 +1,4 @@
-TRUNCATE TABLE raw.employee;
+truncate table raw.employee;
 
 CREATE TABLE  IF NOT EXISTS raw.employee (
     employee_id varchar(255),

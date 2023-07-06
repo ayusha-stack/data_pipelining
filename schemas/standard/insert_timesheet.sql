@@ -8,8 +8,8 @@ INSERT INTO standard.timesheet (
   paycode
 )
 SELECT 
-  employee_id, 
-  cost_center, 
+  employee_id::INTEGER,
+  cost_center::INTEGER, 
   CASE 
       WHEN punch_in_time = 'NaN'  THEN NULL
       ELSE punch_in_time::TIME
